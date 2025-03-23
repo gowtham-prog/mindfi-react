@@ -44,7 +44,7 @@ const UserCard = ({ user }) => {
 
   return (
     <div
-      onClick={() => navigate(`/user/${user.id}`)}
+      onClick={() => navigate(`/user/${user.login}`)}
       className="relative w-full p-6 rounded-lg shadow-md cursor-pointer border-2 border-purple-400 hover:shadow-xl transition duration-300"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

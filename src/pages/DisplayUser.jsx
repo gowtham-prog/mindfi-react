@@ -2,7 +2,7 @@ import { Loader } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useNavigate, useParams } from "react-router-dom";
-// import BookSlot from "../components/BookSlot";
+import BookSlot from "../components/BookSlot";
 
 export default function DisplayUser() {
     const { id } = useParams();
