@@ -11,8 +11,11 @@ export default function Hero({users}) {
 
 
     const filterUser = () => {
-        setFilteredSet(users.filter((user) => user.login.includes(inputValue)))
-    }
+        setFilteredSet(users.filter((user) => 
+            user.login.toLowerCase().includes(inputValue.toLowerCase())
+        ));
+    };
+    
 
     useEffect(() => {
         function handleClickOutside(event) {
